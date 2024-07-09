@@ -109,8 +109,8 @@ def main():
     
     # Input for parameters
     fs = st.number_input("Input sampling frequency (Hz):", min_value=1, max_value=1000, value=250)
-    threshold = st.number_input("Set threshold for QRS detection:", min_value=0.0, max_value=1000.0, value=100.0, step=1.0)
-    window_size = st.number_input("Set moving average window size:", min_value=1, max_value=10, value=4)
+    threshold = st.number_input("Set threshold for QRS detection:", min_value=0.0, max_value=1000.0, value=50.0, step=1.0)
+    window_size = st.number_input("Set moving average window size:", min_value=1, max_value=10, value=1)
 
     if st.button('Mulai Deteksi'):
         if uploaded_file is not None:
